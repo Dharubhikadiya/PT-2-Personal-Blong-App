@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  border: none;
+}
+
+.sansita-regular {
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansita-bold {
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sansita-extrabold {
+  font-family: "Sansita", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.sansita-black {
+  font-family: "Sansita", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sansita-regular-italic {
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sansita-bold-italic {
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.sansita-extrabold-italic {
+  font-family: "Sansita", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.sansita-black-italic {
+  font-family: "Sansita", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+*{
+  border: none;
+  outline: none !important;
+}
+input{
+  border: none;
+  outline: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

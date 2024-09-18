@@ -1,0 +1,16 @@
+.more-option {
+    position: relative;
+    top: 40px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    opacity: 0;
+  }
+  
+  .more-option:hover .dropdown {
+    opacity: 1;
+  }
+  
