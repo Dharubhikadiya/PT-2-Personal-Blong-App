@@ -73,9 +73,14 @@ function Blogapp() {
         setShowDeleteModal(true);
     };
 
-    const filteredTasks = tasks.filter((task) =>
-        task.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        task.content.toLowerCase().includes(searchTerm.toLowerCase())
+    // const filteredTasks = tasks.filter((task) =>
+    //     task.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    //     task.content.toLowerCase().includes(searchTerm.toLowerCase())
+    // );
+
+    const filteredTasks = tasks.filter((task) => 
+        (task.title && task.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (task.content && task.content.toLowerCase().includes(searchTerm.toLowerCase()))
     );
 
     return (
@@ -136,8 +141,8 @@ function Blogapp() {
                             <div key={index} className="mb-3 d-flex justify-content-center align-items-center">
                                 <div className=" d-flex justify-content-between w-75 border-bottom">
                                     <div>
-                                        <h5 className="card-title fs-2 sansita-extrabold">{task.title}</h5>
-                                        <p className="card-text fs-5 sansita-extrabold fw-light mt-3">{task.content}</p>
+                                        <h5 className="card-title fs-2 sansita-extrabold d-flex flex-wrap text-left">{task.title}</h5>
+                                        <p className="card-text fs-5 sansita-extrabold fw-light mt-3 text-left d-flex flex-wrap">{task.content}</p>
                                     </div>
                                     <div>
                                         <span className='more-option' style={{ position: 'relative', cursor: 'pointer' }}>
